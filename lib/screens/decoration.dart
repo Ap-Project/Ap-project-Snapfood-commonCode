@@ -17,4 +17,21 @@ class myDecoration {
     );
   }
 
+  static BoxDecoration myBoxDecoration(){
+    return BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(10.0),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.grey,
+          blurRadius: 7.0,
+          spreadRadius: 4.0,
+          offset: Offset(0, 0),
+        ),
+      ],
+    );
+  }
+
+
 }
+
