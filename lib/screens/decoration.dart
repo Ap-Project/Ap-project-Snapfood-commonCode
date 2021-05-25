@@ -31,7 +31,25 @@ class myDecoration {
       ],
     );
   }
-
-
 }
+
+
+class myTextStyle extends StatelessWidget {
+  final String text;
+  final double fontSize;
+  final Color textColor;
+  myTextStyle({this.text,this.fontSize,this.textColor});
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: fontSize,
+        color: textColor,
+      ),
+    );
+  }
+}
+
 
