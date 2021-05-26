@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 const buttonColor = const Color(0XFFd83e56);
 
@@ -31,14 +32,38 @@ class myDecoration {
       ],
     );
   }
+
+  static AlertStyle myAlertStyle(){
+    return AlertStyle(
+      animationType: AnimationType.fromTop,
+      animationDuration: Duration(milliseconds: 600),
+      isCloseButton: true,
+      descStyle: TextStyle(
+        fontWeight: FontWeight.bold,
+        color: Colors.green,
+      ),
+      titleStyle: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 30,
+        color: Colors.pink,
+      ),
+      alertBorder: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(1.0),
+        side: BorderSide(
+          width: 1.0,
+          color: Colors.grey,
+        ),
+      ),
+    );
+  }
 }
 
 
-class myTextStyle extends StatelessWidget {
+class MyTextStyle extends StatelessWidget {
   final String text;
   final double fontSize;
   final Color textColor;
-  myTextStyle({this.text,this.fontSize,this.textColor});
+  MyTextStyle({this.text,this.fontSize,this.textColor});
   @override
   Widget build(BuildContext context) {
     return Text(

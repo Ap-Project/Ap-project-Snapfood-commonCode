@@ -15,13 +15,13 @@ class ExpandingRowStyleContainer extends StatelessWidget {
         child: Row(
           children: [
             Expanded(
-                child: myTextStyle(
+                child: MyTextStyle(
                   text: text,
                   fontSize: 20.0,
                 )),
             Spacer(),
             Expanded(
-                child: myTextStyle(
+                child: MyTextStyle(
                   text: number.toString(),
                   fontSize: 15.0,
                 )),
