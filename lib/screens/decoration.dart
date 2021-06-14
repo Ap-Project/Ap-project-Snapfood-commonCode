@@ -40,12 +40,12 @@ class myDecoration {
       isCloseButton: true,
       descStyle: TextStyle(
         fontWeight: FontWeight.bold,
-        color: Colors.green,
+        color: Colors.grey,
       ),
       titleStyle: TextStyle(
         fontWeight: FontWeight.bold,
-        fontSize: 30,
-        color: Colors.pink,
+        fontSize: 25,
+        color: buttonColor,
       ),
       alertBorder: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(1.0),
